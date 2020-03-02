@@ -8,9 +8,9 @@
 
 ## Introduction
 
-We have created hashes and now we can move on to practicing reading and updating
-them. Instead of simply requiring you to access and change hash values, we're
-going to use methods to add a bit of abstraction.
+We have created hashes, and now we can move on to practicing reading and updating
+them. Instead of merely requiring you to access and change hash values, we're
+going to incorporate methods to add a bit of abstraction.
 
 **Reminder:** Hashes can be read and updated using brackets:
 
@@ -41,7 +41,7 @@ directory of this lab.
     => {"age"=>39}
    ```
 
-2. Create a method call `read_from_hash` that takes in two parameters. The first
+2. Create a method called `read_from_hash` that takes in two parameters. The first
    parameter is a hash, the second is a key. Used together, they will either
    produce a value on that hash corresponding to the key, or `nil` by default.
    Use these two parameters in conjunction, returning the result.
@@ -119,13 +119,13 @@ creates a symbol, `:key` as the key, regardless of what the `key` parameter is
 equal to.
 
 > **Extra Reading:** It may seem silly to have a method that creates a hash this
-> way. Can't we just create the hash directly? Yes, absolutely. In this example,
+> way. Can't we just build the hash directly? Yes, absolutely. In this example,
 > the resulting hash is small enough that this method would not be useful in a
 > real-world situation. However, this kind of method becomes useful when we want
-> to produce many copies of a particularly structured hash. For instance, we
+> to produce many copies of consistently structured hash. For instance, we
 > might want to create a hash of info for every student in a class with the same
 > keys - `:name`, `:age`, `:birthday`, etc... in this case, we could write a
-> method where we just need to pass in the student's unique info, and the method
+> method where we just need to pass in the student's unique info and the method
 > takes care of structuring the data into a hash for us.
 
 ### `read_from_hash`
