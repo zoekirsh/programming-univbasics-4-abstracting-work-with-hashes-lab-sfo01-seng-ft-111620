@@ -49,9 +49,9 @@ directory of this lab.
    ```sh
    2.6.1 :013 > hash_to_read = {location: 'New York City', occupation: 'Student'}
     => {:location=>"New York City", :occupation=>"Cashier"}
-   2.6.1 :014 > read_from-hash(hash_to_read, :location)
+   2.6.1 :014 > read_from_hash(hash_to_read, :location)
     => "New York City"
-   2.6.1 :015 > read_from-hash(hash_to_read, :occupation)
+   2.6.1 :015 > read_from_hash(hash_to_read, :occupation)
     => "Student"
    ```
 
